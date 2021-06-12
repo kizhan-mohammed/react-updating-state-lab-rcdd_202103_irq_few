@@ -1,6 +1,6 @@
 // Code DigitalClicker Component Here
 
-import React from "react";
+import React from 'react';
 
 export default class DigitalClicker extends React.Component {
     constructor() {
@@ -14,13 +14,13 @@ export default class DigitalClicker extends React.Component {
         this.setState(previousState => {
             return {
                 timesClicked: previousState.timesClicked + 1
-            };
+            }
         })
     }
 
     render() {
         return (
-            <button onClick={this.handleClick}> {this.state.timesClicked}</button>
+            <button onClick={this.handleClick}>{this.state.timesClicked}</button>
         )
     }
 }
